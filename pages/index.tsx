@@ -1,4 +1,6 @@
+import Layout from 'components/layout/layout';
 import { NextPage } from 'next';
+import styles from 'styles/home.module.scss';
 
 interface Props {
 
@@ -6,11 +8,9 @@ interface Props {
 
 const Home: NextPage<Props> = (props) => {
     
-  return (
-    <>
-      Home
-    </>
-  )
+  return <Layout>
+    Home
+  </Layout>
 }
 
 export default Home;

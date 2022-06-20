@@ -1,11 +1,10 @@
 import 'styles/shared/globals.scss'
 import type { AppProps } from 'next/app'
-import Layout from 'components/layout/layout'
 
 function MyApp({ Component, pageProps }: AppProps) {
-  return <Layout>
+  return <div style={{ width: "100%" }}>
     <Component {...pageProps} />
-  </Layout>
+  </div>
 }
 
 export default MyApp

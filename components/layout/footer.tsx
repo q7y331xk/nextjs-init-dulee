@@ -1,11 +1,10 @@
-import { NextPage } from 'next';
+import Link from 'next/link'
+import styles from "styles/layout/footer.module.scss"
+import Image from "next/image"
+import { useRouter } from 'next/router'
 
-const Footer: NextPage = () => {
-  return (
-    <div>
-      Footer
-    </div>
-  )
+const Footer = () => {
+  return 
 }
 
 export default Footer;

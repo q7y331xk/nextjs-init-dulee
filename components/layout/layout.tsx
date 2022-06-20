@@ -1,15 +1,22 @@
-import { ChildNodeProps } from 'types/child-node-props';
-import Footer from './footer';
-import NavBar from './nav-bar';
+import Footer from "./footer"
+import NavBar from "./nav-bar"
+import styles from "styles/layout/layout.module.scss"
+import Image from 'next/image'
+import { useRouter } from "next/router"
+import Head from "next/head"
 
-const Layout = ({children}: ChildNodeProps) => {
-  return (
-    <>
-      <NavBar />
-      {children}
-      <Footer />
-    </>
-  )
+
+interface LayoutProps {
+    title?: string;
+    removeNavBar?: boolean;
+    removeFooter?: boolean;
+    removeKakao?: boolean;
+    children: React.ReactNode;
+ }
+
+const Layout = ({title, removeNavBar, removeFooter, removeKakao, children}: LayoutProps) => {
+  return <>
+    {children}
+  </>
 }
-
 export default Layout;
